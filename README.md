@@ -124,15 +124,16 @@ To compile SASS within an ember-cli addon, there are a few additional steps:
    `package.json`.
 
 3. Define an `included` function in your app:
-   ```js
-   // in your index.js
-   module.exports = {
-     name: 'my-addon',
-     included: function(app) {
-       this._super.included(app);
-     }
-   };
-   ```
+   
+  ```js
+  // in your index.js
+  module.exports = {
+    name: 'my-addon',
+    included: function(app) {
+      this._super.included(app);
+    }
+  };
+  ```
    
    If you omit this step, it will throw the following error:
    ```
